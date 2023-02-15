@@ -33,7 +33,6 @@ cartsRouter.post("/:cid/products/:pid", async (req, res) => {
   return res.send(productInCart);
 });
 
-
 //Ruta para Consultar Productos en Carrito por ID
 cartsRouter.get("/:id", async (req, res) => {
   let cartById = await carts.getCartById(req.params.id);
